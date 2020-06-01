@@ -27,8 +27,12 @@ Rules: # CLEAR
 
 + [See if you have a Task at Home (25% chance)]
     TASK: -> Sometimes(-> RandomTask) -> Review(-> RandomTask) ->
++ [See if you have a Task at Home (100% chance)]
+    TASK: -> RandomTask -> Review(-> RandomTask) ->
 + [See if you have a Task at Work (25% chance)]
     TASK: -> Sometimes(-> RandomTaskAtWork) -> Review(-> RandomTaskAtWork) ->
++ [See if you have a Task at Work (100% chance)]
+    TASK: -> RandomTaskAtWork -> Review(-> RandomTaskAtWork) ->
 + [Test Menu] -> TestMenu
 
 - -> TaskMenu
