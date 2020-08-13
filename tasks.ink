@@ -225,7 +225,7 @@ Did you cum?
 
 === SpankTask ===
 { shuffle:
-    - Smack your {spankLocation()} with {spankTool()} {spankCount()}
+    - Smack {spankLocation()} with {spankTool()} {spankCount()}
         ~ task_type = spank
         -> WhileTaskOptional
 }
@@ -236,13 +236,13 @@ Did you cum?
     - Tie weights to your balls and stretch them for {fewMinutes()}
         ~ task_type = balls
         -> WhileTaskOptional
-    - Use estim on your {estimLocation()} for {manyMinutesOrEndure()}
+    - Use estim on {estimLocation()} for {manyMinutesOrEndure()}
         ~ task_type = torture
         ~ dont_cum = true
         -> WhileTaskOptional
-    - Snap a rubber band {fewTimes()} on your {tortureLocation()}. Count off and thank your keyholder for each one
+    - Snap a rubber band {fewTimes()} on {rubberBandLocation()}. Count off and thank your keyholder for each one
         ~ task_type = torture
-    - Put {smallCount()} clothespins on your {tortureLocation()} for {fewMinutes()}
+    - Put {smallCount()} clothespins on {clothespinLocation()} for {fewMinutes()}
         ~ task_type = torture
         -> WhileTaskOptional
 }
@@ -265,10 +265,10 @@ Did you cum?
     - {task_type != edge: <> while holding the vibe against your cock cage| -> WhileTask}
         ~ dont_cum = true
     - {task_type != porn: <> while watching {pornType()}| -> WhileTask}
-    - {task_type != spank: <> while spanking your {spankLocation()}| -> WhileTask}
-    - {task_type != spank: <> while slapping your {spankLocation()} with {spankTool()}| -> WhileTask}
-    - {task_type != torture: <> while using estim on your {estimLocation()}| -> WhileTask}
-    - {task_type != torture: <> while enduring {smallCount()} clothespins on your {tortureLocation()}| -> WhileTask}
+    - {task_type != spank: <> while spanking {spankLocation()}| -> WhileTask}
+    - {task_type != spank: <> while slapping {spankLocation()} with {spankTool()}| -> WhileTask}
+    - {task_type != torture: <> while using estim on {estimLocation()}| -> WhileTask}
+    - {task_type != torture: <> while enduring {smallCount()} clothespins on {clothespinLocation()}| -> WhileTask}
     - {task_type != writing && task_type != physical: <> while writing down {smallCount()} {thingsToWrite()}| -> WhileTask}
     - {task_type != edge: <> while edging {masturbationMethod()}| -> WhileTask}
 }
@@ -348,21 +348,28 @@ Go to the bathroom and <>
 
 === function spankLocation() ===
 { shuffle:
-    - ass cheeks
-    - balls
+    - your balls
+    - your ass cheeks
 }
 
-=== function tortureLocation() ===
+=== function clothespinLocation() ===
 { shuffle:
-    - balls
-    - ass cheeks
-    - nipples and chest
+    - your balls
+    - your ass cheeks
+    - your nipples and chest
+}
+
+=== function rubberBandLocation() ===
+{ shuffle:
+    - your balls
+    - each ass cheek
+    - each nipple
 }
 
 === function estimLocation() ===
 { shuffle:
-    - balls
-    - ass cheeks
+    - your balls
+    - your ass cheeks
 }
 
 === function exerciseType() ===
