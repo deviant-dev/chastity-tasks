@@ -64,9 +64,12 @@ Rules: # CLEAR
 Send your keyholder snaps while you do so, so they may judge your performance.
 
 + [Complete Task]
++ [Not Equiped to Do This]
+    Okay, let's try something else.
+    -> task -> Review(task)
 + [Choose Again (+1 red card)]
     Shying away from harder tasks is frowned upon. +1 red card.
-    -> task
+    -> task -> Review(task)
 + [Skip Task (+3 red cards)]
     You skipped your task! You shall be punished. +3 red cards. ->->
 
