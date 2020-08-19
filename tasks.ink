@@ -20,9 +20,14 @@ Rules: # CLEAR
 -> TaskMenu
 
 
-=== TaskMenu ===
+=== Reset ===
 ~ task_type = unknown
 ~ dont_cum = false
+->->
+
+
+=== TaskMenu ===
+-> Reset ->
 ~ ask = true
 
 + [See if you have a Task at Home (25% chance)]
@@ -38,6 +43,7 @@ Rules: # CLEAR
 - -> TaskMenu
 
 === TestMenu ===
+-> Reset -> 
 ~ ask = false
 
 + [Test Home Tasks] -> RandomTask -> Review(-> RandomTask) ->
@@ -66,10 +72,10 @@ Send your keyholder snaps while you do so, so they may judge your performance.
 + [Complete Task]
 + [Not Equiped to Do This]
     Okay, let's try something else.
-    -> task -> Review(task)
+    -> Reset -> task -> Review(task)
 + [Choose Again (+1 red card)]
     Shying away from harder tasks is frowned upon. +1 red card.
-    -> task -> Review(task)
+    -> Reset -> task -> Review(task)
 + [Skip Task (+3 red cards)]
     You skipped your task! You shall be punished. +3 red cards. ->->
 
@@ -101,6 +107,8 @@ Did you cum?
 -> TaskMenu
 
 === RandomTask ===
+
+~ dont_cum = false
 
 {shuffle:
     - -> AnalTask
@@ -287,6 +295,7 @@ Did you cum?
 
 
 === RandomTaskAtWork ===
+~ dont_cum = false
 Go to the bathroom and <>
 { shuffle:
     - finger your ass for {veryFewMinutes()}
